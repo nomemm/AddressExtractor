@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:cas="http:///uima/cas.ecore" xmlns:cas2="http:///org/opencorpora/cas.ecore" xmlns:fstype="http:///ru/kfu/cll/uima/segmentation/fstype.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:types="http:///misis/chunkers/address/types.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:commons="http:///ru/kfu/itis/cll/uima/commons.ecore" xmlns:fstype2="http:///ru/kfu/cll/uima/tokenizer/fstype.ecore" xmlns:examples="http:///org/apache/uima/examples.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString=" Часто ходим в поликлинику с коляской по адресу ул.Краснозаменная, 24 от ул.Чайковского по ул.Островского. Почти нигде нет тротуаров.приходится ходить вдоль дороги. И вообще по городу очень немного тротуаров снабжены заездами для колясок.&#9;&#10;"/>
+    <tcas:DocumentAnnotation xmi:id="8" sofa="1" begin="0" end="240" language="ru"/>
+    <examples:SourceDocumentInformation xmi:id="13" sofa="1" begin="0" end="0" uri="file:/home/vladimir/nlp/uimaext2015/address/address89.txt" offsetInSource="0" documentSize="436" lastSegment="false"/>
+    <fstype2:SPACE xmi:id="21" sofa="1" begin="0" end="1"/>
+    <fstype2:SPACE xmi:id="25" sofa="1" begin="6" end="7"/>
+    <fstype2:SPACE xmi:id="29" sofa="1" begin="12" end="13"/>
+    <fstype2:SPACE xmi:id="33" sofa="1" begin="14" end="15"/>
+    <fstype2:SPACE xmi:id="37" sofa="1" begin="26" end="27"/>
+    <fstype2:SPACE xmi:id="41" sofa="1" begin="28" end="29"/>
+    <fstype2:SPACE xmi:id="45" sofa="1" begin="37" end="38"/>
+    <fstype2:SPACE xmi:id="49" sofa="1" begin="40" end="41"/>
+    <fstype2:SPACE xmi:id="53" sofa="1" begin="47" end="48"/>
+    <fstype2:SPACE xmi:id="57" sofa="1" begin="66" end="67"/>
+    <fstype2:SPACE xmi:id="61" sofa="1" begin="69" end="70"/>
+    <fstype2:SPACE xmi:id="65" sofa="1" begin="72" end="73"/>
+    <fstype2:SPACE xmi:id="69" sofa="1" begin="87" end="88"/>
+    <fstype2:SPACE xmi:id="73" sofa="1" begin="90" end="91"/>
+    <fstype2:SPACE xmi:id="77" sofa="1" begin="106" end="107"/>
+    <fstype2:SPACE xmi:id="81" sofa="1" begin="112" end="113"/>
+    <fstype2:SPACE xmi:id="85" sofa="1" begin="118" end="119"/>
+    <fstype2:SPACE xmi:id="89" sofa="1" begin="122" end="123"/>
+    <fstype2:SPACE xmi:id="93" sofa="1" begin="143" end="144"/>
+    <fstype2:SPACE xmi:id="97" sofa="1" begin="150" end="151"/>
+    <fstype2:SPACE xmi:id="101" sofa="1" begin="156" end="157"/>
+    <fstype2:SPACE xmi:id="105" sofa="1" begin="164" end="165"/>
+    <fstype2:SPACE xmi:id="109" sofa="1" begin="166" end="167"/>
+    <fstype2:SPACE xmi:id="113" sofa="1" begin="173" end="174"/>
+    <fstype2:SPACE xmi:id="117" sofa="1" begin="176" end="177"/>
+    <fstype2:SPACE xmi:id="121" sofa="1" begin="183" end="184"/>
+    <fstype2:SPACE xmi:id="125" sofa="1" begin="189" end="190"/>
+    <fstype2:SPACE xmi:id="129" sofa="1" begin="197" end="198"/>
+    <fstype2:SPACE xmi:id="133" sofa="1" begin="207" end="208"/>
+    <fstype2:SPACE xmi:id="137" sofa="1" begin="216" end="217"/>
+    <fstype2:SPACE xmi:id="141" sofa="1" begin="225" end="226"/>
+    <fstype2:SPACE xmi:id="145" sofa="1" begin="229" end="230"/>
+    <fstype2:SPACE xmi:id="149" sofa="1" begin="238" end="240"/>
+    <fstype2:CW xmi:id="153" sofa="1" begin="1" end="6"/>
+    <fstype2:CW xmi:id="157" sofa="1" begin="51" end="65"/>
+    <fstype2:CW xmi:id="161" sofa="1" begin="76" end="87"/>
+    <fstype2:CW xmi:id="165" sofa="1" begin="94" end="105"/>
+    <fstype2:CW xmi:id="169" sofa="1" begin="107" end="112"/>
+    <fstype2:CW xmi:id="173" sofa="1" begin="165" end="166"/>
+    <fstype2:SW xmi:id="177" sofa="1" begin="7" end="12"/>
+    <fstype2:SW xmi:id="181" sofa="1" begin="13" end="14"/>
+    <fstype2:SW xmi:id="185" sofa="1" begin="15" end="26"/>
+    <fstype2:SW xmi:id="189" sofa="1" begin="27" end="28"/>
+    <fstype2:SW xmi:id="193" sofa="1" begin="29" end="37"/>
+    <fstype2:SW xmi:id="197" sofa="1" begin="38" end="40"/>
+    <fstype2:SW xmi:id="201" sofa="1" begin="41" end="47"/>
+    <fstype2:SW xmi:id="205" sofa="1" begin="48" end="50"/>
+    <fstype2:SW xmi:id="209" sofa="1" begin="70" end="72"/>
+    <fstype2:SW xmi:id="213" sofa="1" begin="73" end="75"/>
+    <fstype2:SW xmi:id="217" sofa="1" begin="88" end="90"/>
+    <fstype2:SW xmi:id="221" sofa="1" begin="91" end="93"/>
+    <fstype2:SW xmi:id="225" sofa="1" begin="113" end="118"/>
+    <fstype2:SW xmi:id="229" sofa="1" begin="119" end="122"/>
+    <fstype2:SW xmi:id="233" sofa="1" begin="123" end="132"/>
+    <fstype2:SW xmi:id="237" sofa="1" begin="133" end="143"/>
+    <fstype2:SW xmi:id="241" sofa="1" begin="144" end="150"/>
+    <fstype2:SW xmi:id="245" sofa="1" begin="151" end="156"/>
+    <fstype2:SW xmi:id="249" sofa="1" begin="157" end="163"/>
+    <fstype2:SW xmi:id="253" sofa="1" begin="167" end="173"/>
+    <fstype2:SW xmi:id="257" sofa="1" begin="174" end="176"/>
+    <fstype2:SW xmi:id="261" sofa="1" begin="177" end="183"/>
+    <fstype2:SW xmi:id="265" sofa="1" begin="184" end="189"/>
+    <fstype2:SW xmi:id="269" sofa="1" begin="190" end="197"/>
+    <fstype2:SW xmi:id="273" sofa="1" begin="198" end="207"/>
+    <fstype2:SW xmi:id="277" sofa="1" begin="208" end="216"/>
+    <fstype2:SW xmi:id="281" sofa="1" begin="217" end="225"/>
+    <fstype2:SW xmi:id="285" sofa="1" begin="226" end="229"/>
+    <fstype2:SW xmi:id="289" sofa="1" begin="230" end="237"/>
+    <fstype2:PERIOD xmi:id="293" sofa="1" begin="50" end="51"/>
+    <fstype2:PERIOD xmi:id="297" sofa="1" begin="75" end="76"/>
+    <fstype2:PERIOD xmi:id="301" sofa="1" begin="93" end="94"/>
+    <fstype2:PERIOD xmi:id="305" sofa="1" begin="105" end="106"/>
+    <fstype2:PERIOD xmi:id="309" sofa="1" begin="132" end="133"/>
+    <fstype2:PERIOD xmi:id="313" sofa="1" begin="163" end="164"/>
+    <fstype2:PERIOD xmi:id="317" sofa="1" begin="237" end="238"/>
+    <fstype2:COMMA xmi:id="321" sofa="1" begin="65" end="66"/>
+    <fstype2:NUM xmi:id="325" sofa="1" begin="67" end="69"/>
+    <fstype:Sentence xmi:id="329" sofa="1" begin="1" end="106" firstToken="153" lastToken="305"/>
+    <fstype:Sentence xmi:id="335" sofa="1" begin="107" end="164" firstToken="169" lastToken="313"/>
+    <fstype:Sentence xmi:id="341" sofa="1" begin="165" end="238" firstToken="173" lastToken="317"/>
+    <cas2:Word xmi:id="347" sofa="1" begin="1" end="6" wordforms="1073" token="153"/>
+    <cas2:Word xmi:id="356" sofa="1" begin="7" end="12" wordforms="1061" token="177"/>
+    <cas2:Word xmi:id="365" sofa="1" begin="13" end="14" wordforms="1051" token="181"/>
+    <cas2:Word xmi:id="374" sofa="1" begin="15" end="26" wordforms="1038" token="185"/>
+    <cas2:Word xmi:id="383" sofa="1" begin="27" end="28" wordforms="1028" token="189"/>
+    <cas2:Word xmi:id="392" sofa="1" begin="29" end="37" wordforms="1015" token="193"/>
+    <cas2:Word xmi:id="401" sofa="1" begin="38" end="40" wordforms="1005" token="197"/>
+    <cas2:Word xmi:id="410" sofa="1" begin="41" end="47" wordforms="992" token="201"/>
+    <cas2:Word xmi:id="419" sofa="1" begin="48" end="50" wordforms="979" token="205"/>
+    <cas2:Word xmi:id="428" sofa="1" begin="51" end="65" wordforms="966" token="157"/>
+    <cas2:Word xmi:id="437" sofa="1" begin="67" end="69" wordforms="956" token="325"/>
+    <cas2:Word xmi:id="446" sofa="1" begin="70" end="72" wordforms="946" token="209"/>
+    <cas2:Word xmi:id="455" sofa="1" begin="73" end="75" wordforms="933" token="213"/>
+    <cas2:Word xmi:id="464" sofa="1" begin="76" end="87" wordforms="920" token="161"/>
+    <cas2:Word xmi:id="473" sofa="1" begin="88" end="90" wordforms="910" token="217"/>
+    <cas2:Word xmi:id="482" sofa="1" begin="91" end="93" wordforms="897" token="221"/>
+    <cas2:Word xmi:id="491" sofa="1" begin="94" end="105" wordforms="884" token="165"/>
+    <cas2:Word xmi:id="500" sofa="1" begin="107" end="112" wordforms="874" token="169"/>
+    <cas2:Word xmi:id="509" sofa="1" begin="113" end="118" wordforms="864" token="225"/>
+    <cas2:Word xmi:id="518" sofa="1" begin="119" end="122" wordforms="854" token="229"/>
+    <cas2:Word xmi:id="527" sofa="1" begin="123" end="132" wordforms="841" token="233"/>
+    <cas2:Word xmi:id="536" sofa="1" begin="133" end="143" wordforms="829" token="237"/>
+    <cas2:Word xmi:id="545" sofa="1" begin="144" end="150" wordforms="819" token="241"/>
+    <cas2:Word xmi:id="554" sofa="1" begin="151" end="156" wordforms="809" token="245"/>
+    <cas2:Word xmi:id="563" sofa="1" begin="157" end="163" wordforms="796" token="249"/>
+    <cas2:Word xmi:id="572" sofa="1" begin="165" end="166" wordforms="786" token="173"/>
+    <cas2:Word xmi:id="581" sofa="1" begin="167" end="173" wordforms="776" token="253"/>
+    <cas2:Word xmi:id="590" sofa="1" begin="174" end="176" wordforms="766" token="257"/>
+    <cas2:Word xmi:id="599" sofa="1" begin="177" end="183" wordforms="753" token="261"/>
+    <cas2:Word xmi:id="608" sofa="1" begin="184" end="189" wordforms="743" token="265"/>
+    <cas2:Word xmi:id="617" sofa="1" begin="190" end="197" wordforms="732" token="269"/>
+    <cas2:Word xmi:id="626" sofa="1" begin="198" end="207" wordforms="719" token="273"/>
+    <cas2:Word xmi:id="635" sofa="1" begin="208" end="216" wordforms="707" token="277"/>
+    <cas2:Word xmi:id="644" sofa="1" begin="217" end="225" wordforms="694" token="281"/>
+    <cas2:Word xmi:id="653" sofa="1" begin="226" end="229" wordforms="684" token="285"/>
+    <cas2:Word xmi:id="662" sofa="1" begin="230" end="237" wordforms="671" token="289"/>
+    <types:AddressMention xmi:id="1083" sofa="1" begin="48" end="69"/>
+    <types:AddressMention xmi:id="1087" sofa="1" begin="73" end="105"/>
+    <cas2:Wordform xmi:id="671" lemma="коляска" lemmaId="0" word="662">
+        <grammems>NOUN</grammems>
+        <grammems>plur</grammems>
+        <grammems>femn</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="684" lemma="для" lemmaId="0" word="653">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="694" lemma="заезд" lemmaId="0" word="644">
+        <grammems>NOUN</grammems>
+        <grammems>plur</grammems>
+        <grammems>masc</grammems>
+        <grammems>ablt</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="707" lemma="снабжён" lemmaId="0" word="635">
+        <grammems>PRTS</grammems>
+        <grammems>plur</grammems>
+        <grammems>pssv</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="719" lemma="тротуар" lemmaId="0" word="626">
+        <grammems>NOUN</grammems>
+        <grammems>plur</grammems>
+        <grammems>masc</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="732" lemma="немного" lemmaId="0" word="617">
+        <grammems>NUMR</grammems>
+        <grammems>nomn</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="743" lemma="очень" lemmaId="0" word="608">
+        <grammems>ADVB</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="753" lemma="город" lemmaId="0" word="599">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>masc</grammems>
+        <grammems>datv</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="766" lemma="по" lemmaId="0" word="590">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="776" lemma="вообще" lemmaId="0" word="581">
+        <grammems>ADVB</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="786" lemma="и" lemmaId="0" word="572">
+        <grammems>CONJ</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="796" lemma="дорога" lemmaId="0" word="563">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="809" lemma="вдоль" lemmaId="0" word="554">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="819" lemma="ходить" lemmaId="0" word="545">
+        <grammems>INFN</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="829" lemma="прихожусь" lemmaId="0" word="536">
+        <grammems>VERB</grammems>
+        <grammems>sing</grammems>
+        <grammems>3per</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="841" lemma="тротуар" lemmaId="0" word="527">
+        <grammems>NOUN</grammems>
+        <grammems>plur</grammems>
+        <grammems>masc</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="854" lemma="нет" lemmaId="0" word="518">
+        <grammems>PRED</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="864" lemma="нигде" lemmaId="0" word="509">
+        <grammems>ADVB</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="874" lemma="почёл" lemmaId="0" word="500">
+        <grammems>ADVB</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="884" lemma="островский" lemmaId="0" word="491">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>masc</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="897" lemma="ул" lemmaId="0" word="482">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>datv</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="910" lemma="по" lemmaId="0" word="473">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="920" lemma="чайковский" lemmaId="0" word="464">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>masc</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="933" lemma="ул" lemmaId="0" word="455">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>masc</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="946" lemma="от" lemmaId="0" word="446">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="956" lemma="24" lemmaId="0" word="437">
+        <grammems>NUMR</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="966" lemma="краснозаменная" lemmaId="0" word="428">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>nomn</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="979" lemma="ул" lemmaId="0" word="419">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>gent</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="992" lemma="адрес" lemmaId="0" word="410">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>masc</grammems>
+        <grammems>datv</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1005" lemma="по" lemmaId="0" word="401">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1015" lemma="коляска" lemmaId="0" word="392">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>ablt</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1028" lemma="с" lemmaId="0" word="383">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1038" lemma="поликлиника" lemmaId="0" word="374">
+        <grammems>NOUN</grammems>
+        <grammems>sing</grammems>
+        <grammems>femn</grammems>
+        <grammems>accs</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1051" lemma="в" lemmaId="0" word="365">
+        <grammems>PREP</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1061" lemma="хожу" lemmaId="0" word="356">
+        <grammems>VERB</grammems>
+        <grammems>plur</grammems>
+        <grammems>1per</grammems>
+    </cas2:Wordform>
+    <cas2:Wordform xmi:id="1073" lemma="часто" lemmaId="0" word="347">
+        <grammems>ADVB</grammems>
+    </cas2:Wordform>
+    <cas:View sofa="1" members="8 13 21 25 29 33 37 41 45 49 53 57 61 65 69 73 77 81 85 89 93 97 101 105 109 113 117 121 125 129 133 137 141 145 149 153 157 161 165 169 173 177 181 185 189 193 197 201 205 209 213 217 221 225 229 233 237 241 245 249 253 257 261 265 269 273 277 281 285 289 293 297 301 305 309 313 317 321 325 329 335 341 347 356 365 374 383 392 401 410 419 428 437 446 455 464 473 482 491 500 509 518 527 536 545 554 563 572 581 590 599 608 617 626 635 644 653 662 1083 1087"/>
+</xmi:XMI>
