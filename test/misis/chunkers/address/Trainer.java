@@ -40,7 +40,7 @@ public class Trainer {
 						"MisisAddressTypeSystem");
 						
 		reader = XmiCollectionReader.createDescription(
-				new File("/home/vladimir/nlp/MIsisAddress/temp-uima-output/xmi_output"), tsDesc);
+				new File("/home/vladimir/nlp/MisisAddress/temp-uima-output/xmi_output"), tsDesc);
 //		reader = XReader.getDescription(
 //				"/home/vladimir/nlp/MIsisAddress/temp-uima-output/xmi_output");
 		
@@ -64,12 +64,12 @@ public class Trainer {
 		
 		 TypeSystemDescription typeSystem;
 		 typeSystem = TypeSystemDescriptionFactory. createTypeSystemDescriptionFromPath(
-						 "/home/vladimir/nlp/MIsisAddress/desc/MisisAddressTypeSystem.xml");
+						 "/home/vladimir/nlp/MisisAddress/desc/MisisAddressTypeSystem.xml");
 		 		  		
 		aggregate.add(AnalysisEngineFactory.createEngineDescription(
 				AddressChunker.class, typeSystem,
 				CleartkSequenceAnnotator.PARAM_IS_TRAINING, true,
-				DirectoryDataWriterFactory.PARAM_OUTPUT_DIRECTORY, "/home/vladimir/nlp/MIsisAddress/resources/model",
+				DirectoryDataWriterFactory.PARAM_OUTPUT_DIRECTORY, "/home/vladimir/nlp/MisisAddress/resources/model",
 				DefaultSequenceDataWriterFactory.PARAM_DATA_WRITER_CLASS_NAME,
 				MalletCrfStringOutcomeDataWriter.class));
 
@@ -78,7 +78,7 @@ public class Trainer {
 				aggregate.createAggregateDescription());
 
 		// train a Mallet CRF model on the training data
-		Train.main("/home/vladimir/nlp/MIsisAddress/resources/model");
+		Train.main("/home/vladimir/nlp/MisisAddress/resources/model");
 
 	}
 

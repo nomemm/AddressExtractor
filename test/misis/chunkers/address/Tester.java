@@ -67,7 +67,7 @@ public class Tester {
 		
 		 TypeSystemDescription typeSystem;
 		 typeSystem = TypeSystemDescriptionFactory. createTypeSystemDescriptionFromPath(
-						 "/home/vladimir/nlp/MIsisAddress/desc/MisisAddressTypeSystem.xml");
+						 "/home/vladimir/nlp/MisisAddress/desc/MisisAddressTypeSystem.xml");
 		 
 		 // our NamedEntityChunker annotator, configured to classify on the new texts
 		    aggregate.add(AnalysisEngineFactory.createEngineDescription(
@@ -75,11 +75,11 @@ public class Tester {
 		        CleartkSequenceAnnotator.PARAM_IS_TRAINING,
 		        false,
 		        GenericJarClassifierFactory.PARAM_CLASSIFIER_JAR_PATH,
-		        new File("/home/vladimir/nlp/MIsisAddress/resources/model", "model.jar")));
+		        new File("/home/vladimir/nlp/MisisAddress/resources/model", "model.jar")));
 
 		    AnalysisEngineDescription aeDesc = AnalysisEngineFactory.createEngineDescription(
 		    		XmiWriter.class, typeSystem, 
-		    		XmiWriter.PARAM_OUTPUTDIR, "/home/vladimir/nlp/MIsisAddress/temp-uima-output/split/test");
+		    		XmiWriter.PARAM_OUTPUTDIR, "/home/vladimir/nlp/MisisAddress/temp-uima-output/split/test");
 		    
 		    aggregate.add(aeDesc);
 		    

@@ -6,8 +6,8 @@
 		<version>0.5-SNAPSHOT</version>
 		<relativePath>../../UIMA.Ext.Parent/pom.xml</relativePath>
 	</parent>
-  <groupId>MIsisAddress</groupId>
-  <artifactId>MIsisAddress</artifactId>
+  <groupId>MisisAddress</groupId>
+  <artifactId>MisisAddress</artifactId>
   <version>0.5-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>

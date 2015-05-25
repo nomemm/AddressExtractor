@@ -20,20 +20,32 @@ import org.cleartk.ml.feature.extractor.CleartkExtractor;
 import org.cleartk.ml.feature.extractor.CleartkExtractor.Context;
 import org.cleartk.ml.feature.extractor.CombinedExtractor1;
 import org.cleartk.ml.feature.extractor.CoveredTextExtractor;
+import org.cleartk.ml.feature.extractor.FeatureExtractor1;
 import org.cleartk.ml.feature.extractor.TypePathExtractor;
+import org.cleartk.ml.feature.function.CapitalTypeFeatureFunction;
 import org.cleartk.ml.feature.function.CharacterCategoryPatternFunction;
 import org.cleartk.ml.feature.function.CharacterCategoryPatternFunction.PatternType;
+import org.cleartk.ml.feature.function.CharacterNgramFeatureFunction;
+import org.cleartk.ml.feature.function.CharacterNgramFeatureFunction.Orientation;
+import org.cleartk.ml.feature.function.FeatureFunctionExtractor;
+import org.cleartk.ml.feature.function.NumericTypeFeatureFunction;
 import org.opencorpora.cas.Word;
 import org.opencorpora.cas.Wordform;
 
 import ru.kfu.cll.uima.segmentation.fstype.Sentence;
+import ru.kfu.cll.uima.tokenizer.fstype.NUM;
 import ru.kfu.cll.uima.tokenizer.fstype.Token;
 
 public class AddressChunker extends CleartkSequenceAnnotator<String> {
 
 	private CombinedExtractor1 extractor;
 	private CleartkExtractor contextExtractor;
+	private FeatureFunctionExtractor funcExtractor;
 	private BioChunking<Token, AddressMention> chunking;
+	private CleartkExtractor contextExtractor2;
+	private FeatureFunctionExtractor dictExtractor;
+	private CleartkExtractor contextExtractor3;
+	private CleartkExtractor contextExtractor4;
 
 
 	@Override
@@ -50,8 +62,11 @@ public class AddressChunker extends CleartkSequenceAnnotator<String> {
 			for (Token token : tokens) {
 				
 				List<Feature> features = new ArrayList<Feature>();
-				features.addAll(this.extractor.extract(jCas, token));
+		//		features.addAll(this.extractor.extract(jCas, token));
 				features.addAll(this.contextExtractor.extract(jCas, token));
+	//			features.addAll(this.funcExtractor.extract(jCas, token));
+				features.addAll(this.contextExtractor2.extract(jCas, token));
+				features.addAll(this.contextExtractor3.extract(jCas, token));
 				featureLists.add(features);
 			}
 		
@@ -79,8 +94,7 @@ public class AddressChunker extends CleartkSequenceAnnotator<String> {
 	        List<String> outcomes = this.classifier.classify(featureLists);
 
 	        // create the NamedEntityMention annotations in the CAS
-	        this.chunking.createChunks(jCas, tokens, outcomes);
-	        
+	        this.chunking.createChunks(jCas, tokens, outcomes);	        
 	      }
 		}
 	}
@@ -96,15 +110,45 @@ public class AddressChunker extends CleartkSequenceAnnotator<String> {
 		
 		// the token feature extractor: text, char pattern (uppercase, digits,
 		// etc.), and part-of-speech
-		this.extractor = new CombinedExtractor1(new CoveredTextExtractor(),
-		 /*new CharacterCategoryPatternFunction(PatternType.REPEATS_MERGED),*/ 
-		new TypePathExtractor(Wordform.class, "lemma"));
+		this.extractor = new CombinedExtractor1(
+				new TypePathExtractor(Wordform.class, "lemma"),
+				new TypePathExtractor(Wordform.class, "pos")
+		);
 
 		// the context feature extractor: the features above for the 3 preceding
 		// and 3 following tokens
 		this.contextExtractor = new CleartkExtractor(Token.class,
-				this.extractor, new CleartkExtractor.Preceding(6),
-				new CleartkExtractor.Following(6));
+				this.extractor, 
+				new CleartkExtractor.Preceding(1),
+				new CleartkExtractor.Focus(),
+				new CleartkExtractor.Following(1)
+				);
+		
+		this.funcExtractor = new FeatureFunctionExtractor(
+				new CoveredTextExtractor(), 				
+				new CapitalTypeFeatureFunction(),
+				new CharacterNgramFeatureFunction(CharacterNgramFeatureFunction.Orientation.RIGHT_TO_LEFT, 0, 4),
+				new CharacterCategoryPatternFunction(CharacterCategoryPatternFunction.PatternType.REPEATS_MERGED),
+				new NumericTypeFeatureFunction()
+				);		
+		
+		this.contextExtractor2 = new CleartkExtractor(Token.class,
+				this.funcExtractor, 
+				new CleartkExtractor.Preceding(2),
+				new CleartkExtractor.Focus(),
+				new CleartkExtractor.Following(2));
+				
+		FeatureExtractor1 dictEx = new DictionaryFunctionExtractor();
+
+		this.contextExtractor3 = new CleartkExtractor(Token.class,
+				dictEx, 
+				new CleartkExtractor.Preceding(2),
+				new CleartkExtractor.Focus(),
+		new CleartkExtractor.Following(2)
+				);
+		
+	
+		
 	}
 
 }

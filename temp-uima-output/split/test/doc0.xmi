@@ -2,7 +2,7 @@
     <cas:NULL xmi:id="0"/>
     <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="вВо дворе дома по адресу ул.Медиков д.15 ужасное дорожное покрытие, весь асфальт в выбоинах, едешь как &quot;по минному полю&quot; примите меры!&#9;&#10;"/>
     <tcas:DocumentAnnotation xmi:id="8" sofa="1" begin="0" end="136" language="ru"/>
-    <examples:SourceDocumentInformation xmi:id="13" sofa="1" begin="0" end="0" uri="file:/home/vladimir/nlp/uimaext2015/address/address00.txt" offsetInSource="0" documentSize="241" lastSegment="false"/>
+    <examples:SourceDocumentInformation xmi:id="13" sofa="1" begin="0" end="0" uri="file:/home/vladimir/nlp/uimaext2015/address-new/address00.txt" offsetInSource="0" documentSize="241" lastSegment="false"/>
     <fstype2:SW xmi:id="21" sofa="1" begin="0" end="3"/>
     <fstype2:SW xmi:id="25" sofa="1" begin="4" end="9"/>
     <fstype2:SW xmi:id="29" sofa="1" begin="10" end="14"/>
